@@ -1,331 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- Basic Page Needs
-    ================================================== -->
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unique Builders</title>
-    <meta name="description" content="Subsco is a clean, modern, and creative design HTML Template Kits. it is designed for construction, building companies, renovation and remodeling contractor services or business who wants to showcase their work, services and professional way. This template has beautifull and unique design that will be best suited for your online web presence. It has 100% responsive design and tested on all major handheld devices.">
-    <meta name="keywords" content="architecture, assembly, building, company, construction, constructor, contractor, development, engineering, industrial, infrastructure, manufacturing, mechanical, planning">
-    <meta name="author" content="rudhisasmito.com">
-    <!-- ==============================================
-	Favicons	=============================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Unique Builders</title>
+    <meta name="description" content="Explore the diverse portfolio of construction projects by Unique Builders across Kerala, including commercial complexes, educational institutions, and luxury homes.">
+    
+    <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    <!-- ==============================================
-	CSS VENDOR	=============================================== -->
-    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
-    <link rel="stylesheet" type="text/css" href="css/brands.css">
-    <link rel="stylesheet" type="text/css" href="css/solid.css">
-    <!-- ==============================================
-	Custom Stylesheet	=============================================== -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/vendor/modernizr.min.js"></script>
-  </head>
-  <body data-spy="scroll" data-target="#navbar-example">
-    <!-- LOAD PAGE -->
-    <div class="animationload">
-      <div class="loader"></div>
-    </div>
-    <!-- BACK TO TOP SECTION --> <a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
-    <!-- HEADER -->
-    <div class="header header-1">
-      <!-- MIDDLE BAR -->
-      <div class="middlebar d-none d-sm-block">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-3 col-md-3">
-              <div class="logo"> <img src="images/ulogo.png" alt="" style="width: 187px; height: 68px;">
-              </div>
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern.css">
+    <style>
+        .page-header {
+            padding: 180px 0 100px;
+            background: var(--bg-dark);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.9) 0%, rgba(2, 12, 27, 0.95) 100%);
+            z-index: 1;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        .page-header h1 {
+            color: white;
+            font-size: clamp(36px, 5vw, 64px);
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .filter-btn {
+            padding: 10px 24px;
+            border: 1px solid var(--border);
+            background: white;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            border-radius: 4px;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/ulogo.png" alt="Unique Builders Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/918129007004" class="btn btn-primary">Get a Quote</a>
             </div>
-            <div class="col-9 col-md-9">
-              <div class="contact-info">
-                <!-- INFO 1 -->
-                <div class="rs-icon-1">
-                  <div class="icon">
-                    <div class="fas fa-envelope"></div>
-                  </div>
-                  <div class="body-content">
-                    <div class="heading">Email Support :</div>
-                    uniquebuilderstvm@gmail.com </div>
-                </div>
-                <!-- INFO 1 -->
-                <div class="rs-icon-1">
-                  <div class="icon">
-                    <div class="fas fa-phone-volume"></div>
-                  </div>
-                  <div class="body-content">
-                    <div class="heading">Call Support :</div>
-                    +91 8129007004, 9809315606 </div>
-                </div>
-                <!-- INFO 2 -->
-                <div class="rs-icon-1">
-                  <div class="icon">
-                    <div class="fas fa-clock"></div>
-                  </div>
-                  <div class="body-content">
-                    <div class="heading">Work Hour :</div>
-                    Mon - Fri 08:00 - 17:00 </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- NAVBAR SECTION -->
-      <div class="navbar-main">
+    </nav>
+
+    <header class="page-header">
         <div class="container">
-          <nav id="navbar-example" class="navbar navbar-expand-lg navbar-bg"> <button
-
-              class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle"
-
-                    href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-
-                    aria-expanded="false"> Home </a>
-                  <div class="dropdown-menu"> <a class="dropdown-item" href="index.html">Homepage</a>
-                  </div>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle"
-
-                    href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-
-                    aria-expanded="false"> Projects </a>
-                  <div class="dropdown-menu"> <a class="dropdown-item" href="projects.html">Projects
-                      Grid</a> <a class="dropdown-item" href="projects-single.html">Projects
-                      Single</a> </div>
-                </li>
-                <li class="nav-item dropdown"> <br>
-                </li>
-                <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918129007004" class="btn btn-primary btn-navbar d-none d-sm-block"
-
-              target="_blank" style="color: #ffcc66;">Get a Quote</a> </nav>
-          <!-- Navbar --> </div>
-      </div>
-    </div>
-    <!-- BANNER -->
-    <div class="section banner-page" data-background="images/dummy-img-1920x1280.jpg">
-      <div class="content-wrap pos-relative">
-        <div class="container">
-          <div class="col-12 col-md-12">
-            <div class="d-flex bd-highlight mb-2">
-              <div class="title-page">Projects</div>
-            </div>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb ">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Projects</li>
-              </ol>
-            </nav>
-          </div>
+            <h1 data-reveal>Our Project Portfolio</h1>
+            <p data-reveal style="opacity: 0.7;">Landmarks of Quality and Engineering Excellence Across Kerala.</p>
         </div>
-      </div>
-    </div>
-    <!-- CONTENT -->
-    <div class="section">
-      <div class="content-wrap">
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="pj-hamdan-foundation-ayoor-kollam-kerala.html"
-
-                  title="Industrial Complex">
-                  <div class="media-img"> <img src="images/hamdan/hamdan_1.jpg"
-
-                      alt="" class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">Hamdan Foundation </h4>
-                    <p class="category">Ayoor, kollam, Kerala</p>
-                  </div>
-                </a> </div>
+            <!-- Simple Filters (Functional UI only for now) -->
+            <div class="portfolio-filters" data-reveal>
+                <button class="filter-btn active">All Projects</button>
+                <button class="filter-btn">Commercial</button>
+                <button class="filter-btn">Residential</button>
+                <button class="filter-btn">Educational</button>
             </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="pj-crystal-convention-centre-nagaroor-trivandrum-kerala.html"
 
-                  title="Industrial Complex">
-                  <div class="media-img"> <img src="images/crystal/crystal_1.jpg"
-
-                      alt="" class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">Crystal Convention Centre &nbsp;</h4>
-                    <p class="category">Nagaroor, Trivandrum, Kerala&nbsp;</p>
-                  </div>
-                </a> </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="pj-national-college-manacaud-trivandrum-kerala.html"
-
-                  title="Industrial Complex">
-                  <div class="media-img"> <img src="images/natcollege/nat-college_4.jpg"
-
-                      alt="" class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">National College&nbsp;</h4>
-                    <p class="category">Manacaud, Trivandrum, Kerala</p>
-                  </div>
-                </a> </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="pj-travancore-engineering-college-oyoor-kollam-kerala.html"
-
-                  title="Industrial Complex">
-                  <div class="media-img"> <img src="images/tavan_engg_colg/1.jpg"
-
-                      alt="" class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">Travancore Engineering College&nbsp;</h4>
-                    <p class="category">Oyoor, Kollam, Kerala&nbsp;</p>
-                  </div>
-                </a> </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="pj-toss-academy-manacaud-trivandrum-kerala.html"
-
-                  title="Industrial Complex">
-                  <div class="media-img"> <img src="images/tossacadmy/1.jpg" alt=""
-
-                      class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">TOSS Academy&nbsp;</h4>
-                    <p class="category">Manacaud, Trivandrum, Kerala&nbsp;</p>
-                  </div>
-                </a> </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="box-image-1"> <a href="project-detail.html" title="Industrial Complex">
-                  <div class="media-img"> <img src="images/dummy-img-1200x800.jpg"
-
-                      alt="" class="img-fluid"> </div>
-                  <div class="body-content">
-                    <h4 class="title">Bubbly Shopping Complex&nbsp;</h4>
-                    <p class="category">Nedumanyad, Trivandrum, Kerala&nbsp;</p>
-                  </div>
-                </a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CTA -->
-    <div class="section bgi-cover-center bg-overlay-dark" data-background="images/dummy-img-1200x800.jpg">
-      <div class="content-wrap">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-sm-12 col-md-8 offset-md-2">
-              <div class="cta-info">
-                <h2 class="text-primary">Quality Construction. Honest service.
-                  Great value</h2>
-                <p class="text-white">Our professional team works to increase
-                  productivity and cost effectiveness on the market</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     <!-- FOOTER SECTION -->
-    <div class="footer">
-      <div class="content-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="footer-item"> <img src="images/logo-light.png" alt="logo bottom"
-
-                  class="logo-bottom" style="width: 233px; height: 124px;">
-                <div class="spacer-30"></div>
-                <p>Our professional team works to increase productivity and cost
-                  effectiveness on the market</p>
-                <ul class="list-info my-4">
-                  <li>
-                    <div class="info-icon uk21"> <span class="fas fa-phone-alt"></span>
+            <div class="project-grid">
+                <div class="project-item" data-reveal>
+                    <img src="images/crystal/crystal_1.jpg" alt="Crystal Convention Centre">
+                    <div class="project-overlay">
+                        <h3>Crystal Convention Centre</h3>
+                        <p>Nagaroor, Trivandrum, Kerala</p>
                     </div>
-                    <div class="info-text uk21"><strong>+91 8129 007 004</strong></div>
-                  </li>
-                  <li>
-                    <div class="info-icon uk21"> <span class="fas fa-phone-alt"></span>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/tossacadmy/1.jpg" alt="TOSS Academy">
+                    <div class="project-overlay">
+                        <h3>TOSS Academy</h3>
+                        <p>Manacaud, Trivandrum, Kerala</p>
                     </div>
-                    <div class="info-text uk21"><strong>+91 9809 315 606</strong></div>
-                  </li>
-                  <li> <br>
-                  </li>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/natcollege/nat-college_4.jpg" alt="National College">
+                    <div class="project-overlay">
+                        <h3>National College</h3>
+                        <p>Manacaud, Trivandrum, Kerala</p>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/hamdan/hamdan_1.jpg" alt="Hamdan Foundation">
+                    <div class="project-overlay">
+                        <h3>Hamdan Foundation</h3>
+                        <p>Ayoor, Kollam, Kerala</p>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/tavan_engg_colg/1.jpg" alt="Travancore Engineering College">
+                    <div class="project-overlay">
+                        <h3>Travancore Engineering College</h3>
+                        <p>Oyoor, Kollam, Kerala</p>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/block-img-10.jpg" alt="Bubbly Shopping Complex">
+                    <div class="project-overlay">
+                        <h3>Bubbly Shopping Complex</h3>
+                        <p>Nedumanyad, Trivandrum, Kerala</p>
+                    </div>
+                </div>
+                <!-- Other projects from details.txt -->
+                <div class="project-item" data-reveal>
+                    <img src="images/block-img-14.jpg" alt="Sarkura Tower">
+                    <div class="project-overlay">
+                        <h3>Sarkura Tower</h3>
+                        <p>Chadayamangalam, Kollam, Kerala</p>
+                    </div>
+                </div>
+                <div class="project-item" data-reveal>
+                    <img src="images/block-img-15.jpg" alt="MGM ITI College">
+                    <div class="project-overlay">
+                        <h3>MGM ITI College</h3>
+                        <p>Kilimanoor, Trivandrum, Kerala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project CTA -->
+    <section class="section" style="background: var(--secondary); color: white; text-align: center;">
+        <div class="container" data-reveal>
+            <h2 style="color: white; font-size: 36px; margin-bottom: 24px;">Inspired by our work?</h2>
+            <p style="opacity: 0.8; margin-bottom: 40px;">Let's discuss how we can bring your next landmark project to life.</p>
+            <a href="contact.html" class="btn btn-primary">Start a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-dark); color: white; padding: 100px 0 40px; border-top: 1px solid var(--border);">
+        <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 60px;">
+            <div>
+                <img src="images/ulogo.png" alt="Unique Builders" style="height: 60px; margin-bottom: 30px; filter: grayscale(1) brightness(2);">
+                <p style="color: var(--text-dark); margin-bottom: 30px;">Premium construction and real estate brand based in Kerala, dedicated to excellence and honesty in every project.</p>
+            </div>
+            <div>
+                <h3 style="color: white; margin-bottom: 30px; font-size: 20px;">Quick Links</h3>
+                <ul style="color: var(--text-dark); display: flex; flex-direction: column; gap: 15px;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <div class="sosmed-icon d-inline-flex"> </div>
-              </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="footer-item">
-                <div class="footer-title">Additional Menu </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <ul class="list">
-                      <li><a href="#" title="Home">Home</a></li>
-                      <li><a href="#" title="Pages">Pages</a></li>
-                      <li><a href="#" title="Blog">Blog</a></li>
-                      <li><a href="contact.html" title="Contact">Contact</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <ul class="list">
-                      <li><a href="#" title="My Account">My Account</a></li>
-                      <li><a href="#" title="Help Desk">Help Desk</a></li>
-                      <li><a href="#" title="Support">Support</a></li>
-                      <li><a href="#" title="Your Order">Your Order</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div>
+                <h3 style="color: white; margin-bottom: 30px; font-size: 20px;">Contact Info</h3>
+                <ul style="color: var(--text-dark); display: flex; flex-direction: column; gap: 15px;">
+                    <li><i class="fas fa-phone-alt" style="margin-right: 15px; color: var(--primary);"></i> +91 8129 007 004</li>
+                    <li><i class="fas fa-envelope" style="margin-right: 15px; color: var(--primary);"></i> uniquebuilderstvm@gmail.com</li>
+                    <li><i class="fas fa-location-dot" style="margin-right: 15px; color: var(--primary);"></i> Trivandrum, Kerala</li>
+                </ul>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="footer-item">
-                <div class="footer-title">Follow us on</div>
-                <img src="images/Socialicon/liteicon.png" alt="socicon" title="socicon"
+        </div>
+    </footer>
 
-                  style="width: 95px; height: 35px;">&nbsp; uniquebuilderstvm</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fcopy">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <p class="mt-3 text-center">Copyright 2024, Unique Builders TVM.</p>
-              <p class="mt-3 text-center"> All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JS VENDOR -->
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/owl.carousel.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-    <!-- SENDMAIL -->
-    <script src="js/vendor/validator.min.js"></script>
-    <script src="js/vendor/form-scripts.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
 </html>
