@@ -8,12 +8,15 @@
 :root {
     --primary: #C5A059; /* Gold Accent */
     --primary-dark: #A68545;
+    --primary-accessible: #8B6B23; /* Darker Gold for 4.5:1 contrast on white */
     --secondary: #0A192F; /* Deep Navy */
     --secondary-light: #172A45; /* Navy Lighter */
     --accent: #64FFDA; /* Optional architectural teal accent */
     --steel: #2C3E50; /* Steel Gray */
     --text: #CCD6F6; /* Soft Off-white for high contrast on dark */
     --text-dark: #8892B0; /* Muted slate */
+    --text-accessible: #495670; /* Darker Slate for 4.5:1 contrast on white */
+    --text-light: #F8F9FA; /* Off-white for dark backgrounds */
     --bg-dark: #020C1B; /* Darkest Navy */
     --bg-light: #F5F5F7;
     --bg-white: #FFFFFF;
@@ -159,13 +162,17 @@ ul {
 
 .mobile-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
-    color: var(--secondary);
+    color: white; /* Default white for hero */
+    z-index: 1200; /* Higher than nav-links (1001) */
+    position: relative;
+    transition: var(--transition-fast);
 }
 
-.navbar.scrolled .mobile-toggle {
-    color: var(--secondary);
+.navbar.scrolled .mobile-toggle,
+.nav-links.active ~ .mobile-toggle {
+    color: var(--secondary) !important; /* Force dark when menu is open or scrolled */
 }
 
 .nav-links a:not(.btn):hover {
@@ -190,7 +197,7 @@ ul {
 
 .btn-primary {
     background: var(--primary);
-    color: white;
+    color: var(--secondary); /* High contrast dark text on gold */
     border-radius: 2px; /* Sharper architectural edges */
 }
 
@@ -201,8 +208,8 @@ ul {
 }
 
 .btn-outline {
-    border: 2px solid var(--primary);
-    color: var(--primary);
+    border: 2px solid var(--primary-accessible);
+    color: var(--primary-accessible);
     background: transparent;
 }
 
@@ -417,7 +424,7 @@ ul {
 
 .card-icon {
     font-size: 32px;
-    color: var(--primary);
+    color: var(--primary-accessible);
     margin-bottom: 24px;
 }
 
@@ -468,17 +475,13 @@ ul {
     transform: scale(1.1);
 }
 
-/* Responsive */
-.mobile-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--secondary);
-}
+/* Responsive logic */
 
 @media (max-width: 991px) {
     .mobile-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links {
@@ -499,8 +502,17 @@ ul {
         right: 0;
     }
     
-    .nav-links a {
+    .nav-links a:not(.btn) {
         font-size: 20px;
+        color: var(--secondary) !important; /* Force dark text on white menu background */
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links .btn {
+        width: 80%;
+        margin-top: 20px;
     }
 }
 
